@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button, Input } from 'antd'
+import React from 'react';
+import { Button, Input } from 'antd';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <Input placeholder='输入' />
       <Button type='primary' onClick={handler}>Index</Button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

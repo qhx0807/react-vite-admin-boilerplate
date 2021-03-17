@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import reactRefresh from '@vitejs/plugin-react-refresh'
-import vitePluginImp from 'vite-plugin-imp'
-import path from 'path'
+import { defineConfig } from 'vite';
+import reactRefresh from '@vitejs/plugin-react-refresh';
+import vitePluginImp from 'vite-plugin-imp';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,5 +34,8 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src'),
       }
     ]
+  },
+  server: {
+    open: true
   }
-})
+});
