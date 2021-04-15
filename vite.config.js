@@ -12,7 +12,6 @@ export default defineConfig({
         javascriptEnabled: true,
         modifyVars: {
           // 自定义主题色
-          'primary-color': '#1DA57A',
         },
       },
     },

@@ -1,13 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
+import moment from 'moment';
 import zhCN from 'antd/lib/locale/zh_CN';
 import Home from './pages/home';
-import User from './pages/user';
+// import User from './pages/user';
 import 'antd/dist/antd.less';
-import 'moment/locale/zh-cn';
+import 'moment/dist/locale/zh-cn';
 
-function App() {
+moment.locale('zh-cn');
+
+function App(): React.ReactNode {
   return (
     <ConfigProvider locale={zhCN}>
       <Home />
