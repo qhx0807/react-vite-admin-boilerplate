@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
-import path from 'path';
+// import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,12 +17,11 @@ export default defineConfig({
     },
   },
   resolve: {
-    alias: [
-      {
-        find: /^~/,
-        replacement: path.resolve(__dirname, 'src'),
-      },
-    ],
+    // TODO:
+    // *.less中的@import ~前置符号
+    // 兼容ESM构建工具
+    // https://github.com/ant-design/pro-components/issues/1933
+    alias: [{ find: /^~/, replacement: '' }],
   },
   server: {
     open: true,
